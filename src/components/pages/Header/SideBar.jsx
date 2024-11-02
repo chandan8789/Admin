@@ -19,6 +19,13 @@ const SideBar = () => {
             <span>Services</span>
           </Link>
         </li>
+
+        <li className="nav-item">
+          <Link to="/http://hr.humanresource.com/" className="nav-link">
+            <i className="bi bi-grid"></i>
+            <span>Contact Us</span>
+          </Link>
+        </li>
       </ul>
     </aside>
   );
