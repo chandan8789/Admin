@@ -4,7 +4,7 @@ import PageTitle from "./PageTitle";
 const Main = () => {
   return (
     <main id="main" className="main">
-      <PageTitle  page="Dashboard"/>
+      <PageTitle page="Dashboard" />
     </main>
   );
 };

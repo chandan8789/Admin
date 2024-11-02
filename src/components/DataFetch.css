@@ -1,0 +1,143 @@
+.mainparent {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items */
+  margin-top: 50px;
+}
+
+.FetchChild {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin: 10px; /* Simplified margin */
+  padding: 10px; /* Added padding for better spacing */
+  width: 250px; /* Fixed width for desktop */
+  max-width: 100%; /* Responsive max width */
+  height: auto; /* Allow height to be flexible */
+}
+
+.fimages {
+  height: 200px;
+  width: 100%; /* Full width for responsive images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.ftitle {
+  font-weight: bold;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fprice {
+  font-weight: bold;
+  color: green;
+  font-size: 18px;
+  text-align: center;
+}
+
+.buynow {
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 5px rgb(161, 163, 161);
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s; /* Transition for smoother effect */
+  width: 100%; /* Full width for the button */
+}
+
+.buynow:active {
+  transform: translateX(1px) translateY(1px);
+  box-shadow: 0 0 0 rgb(124, 187, 233);
+}
+
+.buynow:hover {
+  background-color: rgb(91, 183, 199);
+  color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .FetchChild {
+    width: 100%; /* Full width on mobile */
+    max-width: none; /* Remove max-width */
+  }
+
+  .fimages {
+    height: 150px; /* Adjust image height for mobile */
+  }
+
+  .ftitle {
+    font-size: 1em; /* Smaller font size for titles */
+  }
+
+  .fprice {
+    font-size: 1em; /* Smaller font size for price */
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px; /* Adjust width for compact look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+.modal-title {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center; /* Center the title */
+}
+
+.file-input {
+  margin: 10px 0;
+  display: block;
+  width: 100%; /* Full width for file input */
+}
+
+.modal-close-button {
+  margin-top: 10px;
+  padding: 4px 10px;
+  background-color: rgb(91, 183, 199);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; 
+}
+
+.modal-close-button:hover {
+  background-color: rgb(71, 153, 174);
+}

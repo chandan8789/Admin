@@ -6,14 +6,19 @@ import React from "react";
 import "./App.css";
 import Header from "./components/pages/Header/Header";
 import SideBar from "./components/pages/Header/SideBar";
+import { Routes, Route } from "react-router-dom"; // Import Routes and Route
 import Main from "./components/pages/Dashboard/Main";
+import Services from "./components/pages/Services/Services";
 
 const App = () => {
   return (
     <>
       <Header />
       <SideBar />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
     </>
   );
 };

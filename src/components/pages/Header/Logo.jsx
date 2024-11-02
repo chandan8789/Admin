@@ -1,22 +1,23 @@
-import React from 'react'
-import "./Logo.css"
+import React from "react";
+import "./Logo.css";
 
 const Logo = () => {
-    const handleToggleSideBar = () =>{
-        document.body.classList.toggle('toggle-sidebar')
-    }
+  const handleToggleSideBar = () => {
+    document.body.classList.toggle("toggle-sidebar");
+  };
 
   return (
-    <div className='d-flex align-items-center justify-content-between'>
-        <a href="/" className='logo d-flex align-items-center'>
-            {/* <img src="" alt="" srcset="" /> */}
-            <span className='d-none d-lg-block'>LozerwinAdmin</span>
-        </a>
-        <i className='bi bi-list toggle-sidebar-btn' onClick={handleToggleSideBar}>
-
-        </i>
+    <div className="d-flex align-items-center justify-content-between">
+      <a href="/" className="logo d-flex align-items-center">
+        {/* <img src="" alt="" srcset="" /> */}
+        <span className="d-none d-lg-block">Admin Login</span>
+      </a>
+      <i
+        className="bi bi-list toggle-sidebar-btn"
+        onClick={handleToggleSideBar}
+      ></i>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -1,0 +1,49 @@
+/* General Styles */
+.latesproduct {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.productbtn {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers buttons */
+  margin-top: 20px; /* Adjusted for spacing */
+}
+
+.productbtn button {
+  height: 40px; /* Slightly increased for easier tapping */
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  margin: 5px; /* Added margin for spacing */
+  box-shadow: 2px 2px 5px 2px rgb(161, 163, 161);
+  transition: 0.2s; /* Added transition for smoother effects */
+  border: none;
+  flex: 1; /* Makes buttons responsive */
+  min-width: 100px; /* Sets a minimum width for buttons */
+}
+
+/* Button Hover and Active States */
+.productbtn button:hover {
+  background-color: rgb(91, 183, 199);
+  color: white;
+}
+
+.productbtn button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 blue;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .productbtn {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    align-items: center; /* Center the buttons */
+  }
+
+  .productbtn button {
+    width: 90%; /* Full width on small screens */
+  }
+}
